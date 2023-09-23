@@ -30,11 +30,18 @@ export default async function handler(
   const { duration_ms: duration, name: track } = item;
   const { images = [] } = item.album || {};
 
-  const cover = images[images.length - 1]?.url || "/assets/default-artwork.jpg";
-  let coverImg: string;
+  const cover =
+    images[images.length - 1]?.url ||
+    `${req.headers.host}/assets/default-artwork.jpg`;
 
-  const buff = await (await fetch(cover)).arrayBuffer();
-  coverImg = `data:image/jpeg;base64,${Buffer.from(buff).toString("base64")}`;
+  let coverImg;
+
+  try {
+    const buff = await (await fetch(cover)).arrayBuffer();
+    coverImg = `data:image/jpeg;base64,${Buffer.from(buff).toString("base64")}`;
+  } catch (ex) {
+    coverImg = `/assets/default-artwork.jpg`;
+  }
 
   const artist = (item.artists || []).map(({ name }) => name).join(", ");
 
