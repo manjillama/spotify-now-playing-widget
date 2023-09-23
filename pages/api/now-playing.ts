@@ -32,18 +32,12 @@ export default async function handler(
 
   const cover =
     images[images.length - 1]?.url ||
-    `${req.headers.host}/assets/default-artwork.jpg`;
+    `https://raw.githubusercontent.com/manjillama/spotify-playing-badge/main/public/assets/default-artwork.jpg`;
 
-  console.log("Cover", `${req.headers.host}/assets/default-artwork.jpg`);
-
-  let coverImg;
-
-  try {
-    const buff = await (await fetch(cover)).arrayBuffer();
-    coverImg = `data:image/jpeg;base64,${Buffer.from(buff).toString("base64")}`;
-  } catch (ex) {
-    coverImg = `/assets/default-artwork.jpg`;
-  }
+  const buff = await (await fetch(cover)).arrayBuffer();
+  let coverImg = `data:image/jpeg;base64,${Buffer.from(buff).toString(
+    "base64"
+  )}`;
 
   const artist = (item.artists || []).map(({ name }) => name).join(", ");
 
