@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import Player from "../components/player";
-import { nowPlaying } from "../utils";
+import Player from "../../components/player";
+import { nowPlaying } from "../../utils";
 import { renderToString } from "react-dom/server";
 
 type SpotifyAPI = {
