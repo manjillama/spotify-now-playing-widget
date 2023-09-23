@@ -34,6 +34,8 @@ export default async function handler(
     images[images.length - 1]?.url ||
     `${req.headers.host}/assets/default-artwork.jpg`;
 
+  console.log("Cover", `${req.headers.host}/assets/default-artwork.jpg`);
+
   let coverImg;
 
   try {
