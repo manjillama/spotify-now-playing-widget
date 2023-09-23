@@ -9,8 +9,6 @@ const basic = Buffer.from(
 const Authorization = `Basic ${basic}`;
 
 export async function nowPlaying() {
-  console.log(SPOTIFY_REFRESH_TOKEN, SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET);
-
   const Authorization = await getAuthorizationToken();
   const response = await fetch(NOW_PLAYING_ENDPOINT, {
     headers: {

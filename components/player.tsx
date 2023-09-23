@@ -28,13 +28,6 @@ const Player = ({
               background: #e1e4e8 !important;
             }
 
-            img:not([src]) {
-              content: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
-              border-radius: 6px;
-              background: #FFF;
-              border: 1px solid #e1e4e8;
-            }
-
             p {
               display: block;
               opacity: 0;
@@ -135,12 +128,7 @@ const Player = ({
           paddingLeft: 4,
         }}
       >
-        <img
-          id="cover"
-          src={cover ?? "/assets/default-artwork.jpg"}
-          width="48"
-          height="48"
-        />
+        <img id="cover" src={cover} width="48" height="48" />
         <div
           style={{
             display: "flex",
