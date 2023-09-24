@@ -32,7 +32,7 @@ export default async function handler(
 
   const cover =
     images[images.length - 1]?.url ||
-    `https://raw.githubusercontent.com/manjillama/spotify-playing-badge/main/public/assets/default-artwork.jpg`;
+    `https://raw.githubusercontent.com/manjillama/spotify-now-playing-widget/main/public/assets/default-artwork.jpg`;
 
   const buff = await (await fetch(cover)).arrayBuffer();
   let coverImg = `data:image/jpeg;base64,${Buffer.from(buff).toString(

@@ -6,13 +6,13 @@ Guide by [JoshLmao](https://github.com/JoshLmao)
 
 Setup with a click of a button 😉
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/manjillama/spotify-playing-badge)
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/manjillama/spotify-now-playing-widget)
 
 1. Sign up or Sign in to use [Vercel](https://vercel.com/) for hosting the repo. You could use another service like [Heroku](https://heroku.com/) but this guide will use Vercel
-2. Fork [spotify-playing-badge
-   ](https://github.com/manjillama/spotify-playing-badge) which is just a skeleton repo that contains the Spotify Now Playing specific features
+2. Fork [spotify-now-playing-widget
+   ](https://github.com/manjillama/spotify-now-playing-widget) which is just a skeleton repo that contains the Spotify Now Playing specific features
 3. Go to your Vercel dashboard and select Import Project
-4. Paste the Git url of your forked repo. For example "https://github.com/manjillama/spotify-playing-badge"
+4. Paste the Git url of your forked repo. For example "https://github.com/manjillama/spotify-now-playing-widget"
 5. Leave the remaining settings for now and click 'Deploy'
 
 ### Part 2: Configure Environment Vars
@@ -58,7 +58,7 @@ Setup with a click of a button 😉
    Value: MY_REFRESH_TOKEN
    ```
 
-6. Once done, navigate to one of your deployment url's and place "/now-playing" at the end. For example, "https://spotify-playing-badge.vercel.app/api/now-playing"
+6. Once done, navigate to one of your deployment url's and place "/now-playing" at the end. For example, "https://spotify-now-playing-widget.vercel.app/api/now-playing"
 
 7. Replace "MY_VERCEL_DEPLOYMENT_URL" in the following code with one of your deployment url's and insert it into any ReadMe.md
 

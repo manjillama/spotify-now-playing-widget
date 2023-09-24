@@ -17,7 +17,7 @@ export default function Home() {
       }}
     >
       <div style={{ textAlign: "center" }}>
-        <h2>Spotify now playing badge</h2>
+        <h2>Spotify now playing widget</h2>
         <br />
         <p>
           Navigate to <Link href="/api/now-playing">/api/now-playing</Link>

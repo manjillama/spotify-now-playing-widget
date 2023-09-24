@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 **Now Playing on Spotify**
 
-<a href="https://github.com/manjillama/spotify-playing-badge">
+<a href="https://github.com/manjillama/spotify-now-playing-widget">
     <img src="https://spotify-playing-badge.vercel.app/api/now-playing" width="256" height="64" alt="Now Playing">
 </a>
 
@@ -18,17 +18,17 @@ Read [setup-guide](./setup-guide.md) to get started with Spotify API
 
    ```bash
    # Clone with SSH
-   $ git clone git@github.com:manjillama/spotify-playing-badge.git
+   $ git clone git@github.com:manjillama/spotify-now-playing-widget.git
 
    # Or with HTTPS
-   $ git clone https://github.com/manjillama/spotify-playing-badge.git
+   $ git clone https://github.com/manjillama/spotify-now-playing-widget.git
    ```
 
 2. **Install dependencies**
    Navigate into newly cloned folder and install dependencies.
 
    ```shell
-   cd spotify-playing-badge/
+   cd spotify-now-playing-widget/
    npm install
    ```
 
